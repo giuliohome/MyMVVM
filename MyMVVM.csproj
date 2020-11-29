@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>GiulioMVVM</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Giulio</Authors>
+    <Company>Home</Company>    
+  </PropertyGroup>
+
+</Project>
