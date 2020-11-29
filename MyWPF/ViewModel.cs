@@ -18,7 +18,9 @@ namespace MyWPF
             get { return testResult; }
             set {
                 testResult = value;
-                OnPropertyChanged(() => TestResult);
+                OnPropertyChanged(); // it is possibile to use the default in this case
+                // otherwise you can choose a different overloading, e.g.:
+                // OnPropertyChanged(() => TestResult);
             }
         }
 

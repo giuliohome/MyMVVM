@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 
 namespace GiulioMVVM
 {
@@ -15,13 +16,6 @@ namespace GiulioMVVM
         }
  
         #endregion // Constructor
- 
-        #region DisplayName
- 
- 
-        public virtual string DisplayName { get; protected set; }
- 
-        #endregion // DisplayName
  
         #region Debugging Aides
  
@@ -72,7 +66,7 @@ namespace GiulioMVVM
         }
  
 
-        protected virtual void OnPropertyChanged(string propertyName)
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             this.VerifyPropertyName(propertyName);
 
